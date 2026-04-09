@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message Sent — Connecting Dots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Connecting Dots" onerror="this.style.display='none'">
+        <span class="logo-text">Connecting Dots</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Startups</a>
+          <ul class="dropdown">
+            <li><a href="shipping-accelerator.html">Shipping Accelerator</a></li>
+            <li><a href="guidance-program.html">Guidance Program</a></li>
+            <li><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+        </li>
+        <li><a href="vcs.html">For VCs</a>
+          <ul class="dropdown">
+            <li><a href="flash-audit.html">Flash Technical Audit</a></li>
+            <li><a href="due-diligence.html">Deep Dive Due Diligence</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="min-height: 70vh; display: flex; align-items: center;">
+    <div class="hero-bg"></div>
+    <div class="container" style="text-align: center; position: relative; z-index: 1;">
+      <div style="font-size: 4rem; margin-bottom: 24px;">✅</div>
+      <p class="hero-eyebrow">Message received</p>
+      <h1 style="margin-bottom: 20px;">Thanks for reaching out!</h1>
+      <p class="hero-sub" style="margin: 0 auto 36px; max-width: 480px;">
+        We've got your message and will get back to you within 1–2 business days.
+      </p>
+      <a href="index.html" class="btn btn-primary">Back to home</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Startups</a>
+        <a href="vcs.html">VCs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:contact@connectingdots.tech">contact@connectingdots.tech</a>
+        <a href="https://www.linkedin.com/company/connecting-dots-tech" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer-copy">©2025 Connecting Dots</p>
+    </div>
+  </footer>
+  <script>document.querySelector('.nav-toggle').addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'));</script>
+</body>
+</html>
