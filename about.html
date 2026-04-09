@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Connecting Dots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Connecting Dots" onerror="this.style.display='none'">
+        <span class="logo-text">Connecting Dots</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Startups</a>
+          <ul class="dropdown">
+            <li><a href="shipping-accelerator.html">Shipping Accelerator</a></li>
+            <li><a href="guidance-program.html">Guidance Program</a></li>
+            <li><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+        </li>
+        <li><a href="vcs.html">For VCs</a>
+          <ul class="dropdown">
+            <li><a href="flash-audit.html">Flash Technical Audit</a></li>
+            <li><a href="due-diligence.html">Deep Dive Due Diligence</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Who we are</p>
+      <h1>About Connecting Dots</h1>
+      <p>We are execution consultants who've been in the trenches of early-stage startups and know what it takes to ship fast without burning out your team.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container two-col">
+      <div>
+        <h2>Our philosophy</h2>
+        <p>Connecting Dots is a consulting company that helps early stage startups ship fast and collaborate effectively so they get more tries at being wrong before they eventually get it right.</p>
+        <p>We take a no-nonsense approach — delivered with a soft touch — to putting in place simple processes and smooth collaboration techniques. No boilerplate. No buzzwords. Just practical tools that stick.</p>
+        <p>We believe that with the right foundations in place, any startup team can become both robust and fast — and that's the combination that gets you to product market fit.</p>
+      </div>
+      <div class="visual">🧩</div>
+    </div>
+  </section>
+
+  <section class="content-section alt">
+    <div class="container">
+      <h2>What we do differently</h2>
+      <p>Most consultants give you a report and disappear. We stay with you until the changes actually stick. Whether that's through our Guidance Program or by embedding directly with your team in the Launchpad, we're in it with you.</p>
+      <p>We have a particular eye for the human side of execution — identifying hidden gems in your team, unlocking collaboration, and making sure improvements outlast our engagement.</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:8px">Get in touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Startups</a>
+        <a href="vcs.html">VCs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:contact@connectingdots.tech">contact@connectingdots.tech</a>
+        <a href="https://www.linkedin.com/company/connecting-dots-tech" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer-copy">©2025 Connecting Dots</p>
+    </div>
+  </footer>
+  <script>document.querySelector('.nav-toggle').addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'));</script>
+</body>
+</html>

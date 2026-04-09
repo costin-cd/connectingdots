@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Connecting Dots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Connecting Dots" onerror="this.style.display='none'">
+        <span class="logo-text">Connecting Dots</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Startups</a>
+          <ul class="dropdown">
+            <li><a href="shipping-accelerator.html">Shipping Accelerator</a></li>
+            <li><a href="guidance-program.html">Guidance Program</a></li>
+            <li><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+        </li>
+        <li><a href="vcs.html">For VCs</a>
+          <ul class="dropdown">
+            <li><a href="flash-audit.html">Flash Technical Audit</a></li>
+            <li><a href="due-diligence.html">Deep Dive Due Diligence</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Let's talk</p>
+      <h1>Get in Touch</h1>
+      <p>Tell us a bit about where you are and what you're struggling with. We'll get back to you within 1–2 business days.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thanks.html">
+        <!-- If not using Netlify, replace with your preferred form service or mailto -->
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@startup.com" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company / Startup</label>
+          <input type="text" id="company" name="company" placeholder="Acme Inc.">
+        </div>
+        <div class="form-group">
+          <label for="interest">I'm interested in…</label>
+          <select id="interest" name="interest">
+            <option value="">Select a service</option>
+            <option>Shipping Accelerator</option>
+            <option>Guidance Program</option>
+            <option>Launchpad</option>
+            <option>Flash Technical Audit (for VCs)</option>
+            <option>Deep Dive Due Diligence (for VCs)</option>
+            <option>Just exploring</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">What's your main challenge right now?</label>
+          <textarea id="message" name="message" placeholder="Tell us what's going on…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start">Send message →</button>
+      </form>
+
+      <div style="margin-top: 60px; text-align: center; color: var(--light-text); font-size: 0.9rem;">
+        <p>Or reach us directly: <a href="mailto:contact@connectingdots.tech" style="color:var(--accent)">contact@connectingdots.tech</a></p>
+        <p style="margin-top:8px"><a href="https://www.linkedin.com/company/connecting-dots-tech" target="_blank" style="color:var(--accent)">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Startups</a>
+        <a href="vcs.html">VCs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:contact@connectingdots.tech">contact@connectingdots.tech</a>
+        <a href="https://www.linkedin.com/company/connecting-dots-tech" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer-copy">©2025 Connecting Dots</p>
+    </div>
+  </footer>
+  <script>document.querySelector('.nav-toggle').addEventListener('click',()=>document.querySelector('.nav-links').classList.toggle('open'));</script>
+</body>
+</html>
